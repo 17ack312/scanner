@@ -1,0 +1,23 @@
+IFS="/"
+
+read -ra arr <<< $1
+c=0
+for i in ${arr[*]}
+do
+grep -qv '[:|=|?]' <<< $i
+if [ $? -eq 0 ]
+        then
+                u[$c]=$i
+		((c++))
+        fi
+done
+
+for i in ${u[*]}
+do
+
+echo $i | grep -ie ".com" 
+done
+
+
+echo $URL
+

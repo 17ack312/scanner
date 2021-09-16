@@ -1,0 +1,1 @@
+nikto -url $1 -Tuning x

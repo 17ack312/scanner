@@ -1,0 +1,4 @@
+nmap -sV -A $1
+nmap -sV -Pn --script vulners.nse $1
+nmap -sV -Pn --script ssl-enum-cipher $1
+nmap -sV -Pn --script ssl-heartbleed $1

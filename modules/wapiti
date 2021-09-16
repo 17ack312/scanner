@@ -1,0 +1,1 @@
+wapiti -u $1 -m backup,blindsql,brute_login_form,buster,cookieflags,crlf,csp,csrf,exec,file,htaccess,http_headers,methods,nikto,permanentxss,redirect,shellshock,sql,ssrf,wapp,xss,xxe
